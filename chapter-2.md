@@ -39,7 +39,9 @@
   for set in (strat_train_set, strat_test_set):
     set.drop(["continuous_attribute_cat"], axis=1,  inplace=True)
   ```
-
+- `dataset = strat_train_set.copy()`: creates a copy of the dataset
+- `dataset.plot(kind="scatter", x="longitude", y="latitude")`: creates a scatterplot of geographical data
+  + `alpha=0.1`: makes it easier to visualise high density plots
   
   
 
